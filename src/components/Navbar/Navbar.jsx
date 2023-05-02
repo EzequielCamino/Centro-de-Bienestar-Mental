@@ -12,7 +12,7 @@ function MyAppNavbar() {
           <Nav>
             <Nav.Link href="/servicios">Servicios</Nav.Link>
             <Nav.Link href="/contacto">Contacto</Nav.Link>
-            <Button href="/cita" className="navbarButton" variant="info">Agendar cita</Button>
+            <Button href="/citas" className="navbarButton" variant="info">Agendar cita</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
