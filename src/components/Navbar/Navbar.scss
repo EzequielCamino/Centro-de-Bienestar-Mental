@@ -1,15 +1,24 @@
-.logo {
-    width: 15rem;
-}
-.nav-link:hover {
-    color: black;
+.nav-link{
     font-weight: bold;
+    &:hover{
+        color: rgba(5, 166, 194, 1);
+    }
 }
-.nav-link:focus{
-    color: black;
+
+/* .navbarButton {
+    color: white;
     font-weight: bold;
+    &:hover {
+        color: white;
+    }
+} */
+
+.navbar{
+    --bs-border-width: 0px;
+    --bs-navbar-toggler-focus-width: 0px;
 }
-.navbar-nav .show>.nav-link {
-    color: black;
-    font-weight: bold;
-}
+
+/* CODE TO CHANGE NAVBAR ICON COLOR */
+/* .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='17' viewBox='0 0 18 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0.198242H18V2.95233H0V0.198242ZM0 9.74148V7.05144H18V9.74148H0ZM0 16.5947V13.8406H18V16.5947H0Z' fill='%2305A6C2'/%3E%3C/svg%3E");
+} */
