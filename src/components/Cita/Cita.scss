@@ -1,0 +1,18 @@
+.formContainer{
+
+    display: flex;
+    height: 100vh;
+
+    .imgBack{
+        width: 100vh;
+        position: absolute;
+        z-index: -1;
+        opacity: 50%;
+    }
+
+    .textContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

@@ -38,8 +38,9 @@ function Servicios(){
                 </div>
             </section>
             <section className='services'>
-                <div className='imgContainer'>
-                    <img src="man-sitting-psychologist-s-office-talking-about-problems 1.png" alt="" />
+                <div className='imgContainer1'>
+                    <img className='img1' src="man-sitting-psychologist-s-office-talking-about-problems 1.png" alt="" />
+                    <div className='textContainer'>
                     <h1 className='serviceTitle'>Psicología</h1>
                     <ul>
                         <li>Psicoterapia individual</li>
@@ -47,18 +48,22 @@ function Servicios(){
                         <li>Psicoterapia de pareja</li>
                         <li>Psicoterapia Infantil</li>
                     </ul>
-                    <p className='text3'>Nuestro equipo de psicoterapeutas están para ayudarte a resolver tus problemas emocionales y psicológicos!</p>
+                    <p className='text3'>Nuestro equipo de psicoterapeutas están para ayudarte a resolver tus problemas emocionales y psicológicos!</p> 
+                    </div>
                 </div>
-                <div className='imgContainer'>
-                    <img src="close-up-blurry-people-therapy 1.png" alt="" />
+                <div className='imgContainer2'>
+                    <div className='textContainer'>
                     <h1 className='serviceTitle'>Coaching</h1>
                     <ul>
                         <li>Programación neurolingüística</li>
                     </ul>
                     <p className='text3'>Modelo de comunicación que se centra en identificar y usar modelos de pensamiento que influyan sobre el comportamiento de una persona como una manera de mejorar la calidad y la efectividad de la vida.</p>
+                    </div>
+                    <img className='img1' src="close-up-blurry-people-therapy 1.png" alt="" />
                 </div>
-                <div className='imgContainer'>
-                    <img src="man-talking-therapist 1.png" alt="" />
+                <div className='imgContainer3'>
+                    <img className='img1' src="man-talking-therapist 1.png" alt="" />
+                    <div className='textContainer'>
                     <h1 className='serviceTitle'>Psiquiatría</h1>
                     <ul>
                         <li>Depresión</li>
@@ -77,6 +82,7 @@ function Servicios(){
                         <li>Alcoholismo</li>
                         <li>Dependencia de drogas</li>
                     </ul>
+                    </div>
                 </div>
             </section>
             <section className="schedule">
