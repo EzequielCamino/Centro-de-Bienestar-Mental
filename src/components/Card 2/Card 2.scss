@@ -1,16 +1,20 @@
 .card2{
-    width: 30vw;
-    height: 15vw;
+    width: 27vw;
+    height: 13.5vw;
     display: flex;
     background-color: #FBFBFB;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 10px rgba(71, 71, 71, 0.15));
     .card2Icon{
-        width: 15vw;
+        min-width: 20%;
+        max-width: 20%;
         border-radius: 10px 0px 0px 10px;
         img{
-            margin-left: 25%;
-            margin-top: 125%;
+            width: 2vw;
+            height: auto;
+            display: block;
+            margin: auto;
+            margin-top: 100%;
         }
     }
     .card2Color1{
@@ -23,14 +27,16 @@
         background-color: #025E6E;
     }
     .card2Text{
-        margin: 5vw;
+        margin: 2vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         h3{
+            font-size: calc(6.66px + 0.695vw);
             color: rgba(2, 94, 110, 1);
         }
         p{
+            font-size: calc(5.33px + 0.555vw);
             color: rgba(47, 38, 22, 1);
         }
     }

@@ -3,5 +3,29 @@
     --bs-card-inner-border-radius: 15px
 }
 .card3{
-    width: 25vw
+    height: 36vw;
+    width: 23vw;
+    border-width: 0;
+    background: #FBFAF8;
+    box-shadow: 3px 4px 15px rgba(5, 166, 194, 0.1);
+    .card3Body{
+        font-size: calc(5.33px + 0.555vw);
+        margin: 1vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7vw;
+        .card3BodyTitle{
+            font-size: calc(8.33px + 0.868vw);
+            color: rgba(118, 96, 55, 1);
+        }
+    }
+    .card3BodyButton{
+        font-size: calc(6.66px + 0.695vw);
+        position: absolute;
+        width: 35%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: 2vw;
+        margin-top: 138%;
+    }
 }

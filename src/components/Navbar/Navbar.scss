@@ -1,6 +1,8 @@
 .nav-link{
     font-weight: bold;
     &:hover{
+        transform: scale(1.1);
+        transition: 200ms;
         color: rgba(5, 166, 194, 1);
     }
 }
@@ -14,8 +16,24 @@
 } */
 
 .navbar{
+    height: 120px;
     --bs-border-width: 0px;
     --bs-navbar-toggler-focus-width: 0px;
+    .navbarBrand{
+        position: relative;
+    }
+    .navbarLinks{
+        padding-top: 16px;
+        gap: 12px;
+        .navbarLinksRefs{
+            padding-top: 8px;
+        }
+        .navbarLinksButton{
+            width: 200px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
 }
 
 /* CODE TO CHANGE NAVBAR ICON COLOR */

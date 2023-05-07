@@ -13,18 +13,18 @@ import './App.scss'
 function App() {
   return (
     <>
-{/*     <Provider> */}
+      {/*     <Provider> */}
+      <MyAppNavbar/>
       <BrowserRouter>
-        <MyAppNavbar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path='/servicios' element={<Servicios/>}/>
-          <Route path='/contacto' element={<Contacto/>}/>
-          <Route path='/citas' element={<Citas/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path='/servicios' element={<Servicios />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/citas' element={<Citas />} />
         </Routes>
-        <MyAppFooter/>
+      <MyAppFooter/>
       </BrowserRouter>
-{/*     </Provider> */}
+      {/*     </Provider> */}
     </>
   );
 }

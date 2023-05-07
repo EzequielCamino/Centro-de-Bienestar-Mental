@@ -19,11 +19,12 @@ function Home() {
             </section>
             <section className="aboutus">
                 <h2>Sobre nosotros</h2>
-                <p>Nuestro centro de bienestar de salud mental es un lugar donde las personas pueden encontrar el apoyo y la orientación necesarios para mejorar su salud mental y su bienestar emocional. Contamos con un equipo de profesionales altamente capacitados, que están comprometidos a brindar un enfoque integral de tratamiento a cada uno de nuestros pacientes.</p>
+                <p className="aboutusText">Nuestro centro de bienestar de salud mental es un lugar donde las personas pueden encontrar el apoyo y la orientación necesarios para mejorar su salud mental y su bienestar emocional. Contamos con un equipo de profesionales altamente capacitados, que están comprometidos a brindar un enfoque integral de tratamiento a cada uno de nuestros pacientes.</p>
                 <div className="aboutusCards">
                     <Card1 cardnum="aboutusCard1" icon="misson.svg" title="Nuestra misión" text="Es brindar a nuestros pacientes la atención y el apoyo necesarios para mejorar su salud mental y su bienestar emocional. Nos comprometemos a ofrecer un enfoque integral de tratamiento, utilizando las últimas técnicas y terapias basadas en la evidencia para ayudar a nuestros pacientes a alcanzar sus metas y vivir una vida plena y satisfactoria."/>
-                    <img src="aboutusdecoration.svg" alt=""/>
+                    <img className="aboutusDecoration" src="aboutusdecoration.svg" alt=""/>
                     <Card1 cardnum="aboutusCard2" icon="vision.svg" title="Nuestra visión" text="Es crear un mundo donde la salud mental sea valorada tanto como la salud física y donde todas las personas tengan acceso a la atención y el apoyo necesarios para cuidar su bienestar emocional. Nos esforzamos por ser líderes en el campo de la salud mental, innovando continuamente y brindando atención de la más alta calidad a nuestros pacientes."/>
+                    <span className="circle"/>
                 </div>
             </section>
             <section className="services">
@@ -36,7 +37,7 @@ function Home() {
             </section>
             <section className="specialists">
                 <h2>Conoce a nuestros especialistas en salud mental</h2>
-                <p>En nuestro Centro de Bienestar Mental, nuestras especialistas están comprometidas en brindar atención personalizada a nuestros pacientes, trabajando de cerca con ellos para desarrollar planes de tratamiento adaptados a sus necesidades únicas.</p>
+                <p className="specialistsText">En nuestro Centro de Bienestar Mental, nuestras especialistas están comprometidas en brindar atención personalizada a nuestros pacientes, trabajando de cerca con ellos para desarrollar planes de tratamiento adaptados a sus necesidades únicas.</p>
                 <div className="specialistsCards">
                     <Card3 specialist="Aillon.jpg" title="Dra. Marcela Aillon" boldtext="Médico psiquiatra"/>
                     <Card3 specialist="Paz.jpg" title="Lic. Gabriela Paz" boldtext="Psicóloga" text="| Psicoterapia individual, de familia, de pareja e infantil."/>
