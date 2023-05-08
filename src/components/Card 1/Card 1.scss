@@ -30,3 +30,33 @@
     top: 5vw;
     right: 1.5vw;
 }
+
+@media screen and (max-width:992px){
+    .aboutusCard{
+        h3{
+            font-size: calc(6px + 0.625vw);
+        }
+        p{
+            font-size: calc(4.33px + 0.5vw);
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .aboutusCard{
+        width: 327px;
+        height: 416px;
+        gap: 2vw;
+        text-align: start;
+        .aboutusCardIcon{
+            width: 54px;
+            height: 54px;
+        }
+        h3{
+            font-size: 18px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}

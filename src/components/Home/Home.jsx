@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import Card1 from "../Card 1/Card 1";
 import Card2 from "../Card 2/Card 2";
 import Card3 from "../Card 3/Card 3";
+import CarouselMobile from "../Carousel/Carousel";
 import './Home.scss'
 
 function Home() {
@@ -43,17 +44,18 @@ function Home() {
                     <Card3 specialist="Paz.jpg" title="Lic. Gabriela Paz" boldtext="Psicóloga" text="| Psicoterapia individual, de familia, de pareja e infantil."/>
                     <Card3 specialist="Soliz.jpg" title="Lic. Daniela Soliz" boldtext="Psicóloga" text="| Coach especialista en programación neurolingüística. Psicoterapia individual, de familia y de pareja."/>
                 </div>
+                <div className="specialistsCardsMobile"><CarouselMobile/></div>
             </section>
             <section className="schedule">
                 <div className="scheduleText">
-                    <h1>Tu salud mental si importa</h1>
-                    <h1>¡Comienza a cuidarla hoy mismo!</h1>
-                    <br/><br/>
-                    <p>Cuidar tu salud mental es tan importante como cuidar la salud física. Una buena salud mental nos permite disfrutar una vida plenamente, mantener relaciones saludables y hacer frente a los desafíos que se nos presentan.</p>
+                    <h1 className="scheduleTextDesktop">Tu salud mental si importa</h1>
+                    <h1 className="scheduleTextDesktop">¡Comienza a cuidarla hoy mismo!</h1>
+                    <h1 className="scheduleTextMobile">Tu salud mental si importa ¡Comienza a cuidarla hoy mismo!</h1>
+                    <p className="scheduleTextSecondary">Cuidar tu salud mental es tan importante como cuidar la salud física. Una buena salud mental nos permite disfrutar una vida plenamente, mantener relaciones saludables y hacer frente a los desafíos que se nos presentan.</p>
                     <p>¡Estamos para ayudarte!</p>
                     <Button href="/citas" className="scheduleTextBtn" variant="info">Agenda una cita</Button>
                 </div>
-                <div className="none"/>
+                {/* <div className="none"/> */}
             </section>
         </>
     )

@@ -1,15 +1,17 @@
-.card2{
+.card2 {
     width: 27vw;
     height: 13.5vw;
     display: flex;
     background-color: #FBFBFB;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 10px rgba(71, 71, 71, 0.15));
-    .card2Icon{
+
+    .card2Icon {
         min-width: 20%;
         max-width: 20%;
         border-radius: 10px 0px 0px 10px;
-        img{
+
+        img {
             width: 2vw;
             height: auto;
             display: block;
@@ -17,27 +19,69 @@
             margin-top: 100%;
         }
     }
-    .card2Color1{
+
+    .card2Color1 {
         background-color: #058BA2;
     }
-    .card2Color2{
+
+    .card2Color2 {
         background-color: #766037;
     }
-    .card2Color3{
+
+    .card2Color3 {
         background-color: #025E6E;
     }
-    .card2Text{
+
+    .card2Text {
         margin: 2vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        h3{
+
+        h3 {
             font-size: calc(6.66px + 0.695vw);
             color: rgba(2, 94, 110, 1);
         }
-        p{
+
+        p {
             font-size: calc(5.33px + 0.555vw);
             color: rgba(47, 38, 22, 1);
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card2>.card2Text {
+        justify-content: initial;
+        h3 {
+            font-size: calc(6px + 0.625vw);
+        }
+        p {
+            font-size: calc(4.33px + 0.5vw);
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card2 {
+        width: 326.32px;
+        height: 235px;
+        .card2Icon{
+            width: 79.9px;
+            img{
+                width: 37px;
+                margin-top: 150%;
+            }
+        }
+        .card2Text {
+            margin: 32.5px;
+            justify-content: center;
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 13px;
+            }
         }
     }
 }

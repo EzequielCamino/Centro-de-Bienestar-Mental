@@ -22,10 +22,44 @@
     .card3BodyButton{
         font-size: calc(6.66px + 0.695vw);
         position: absolute;
-        width: 35%;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        width: 37%;
+        padding-top: 0.42vw;
+        padding-bottom: 0.42vw;
         margin-left: 2vw;
         margin-top: 138%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .card3{
+        .card3Body{
+            font-size: calc(4.66px + 0.486vw);
+            .card3BodyTitle{
+                font-size: calc(6px + 0.625vw);
+            }
+        }
+        .card3BodyButton{
+            font-size: calc(5.33px + 0.555vw);
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .card3{
+        height: 492px;
+        width: 260px;
+        .card3Body{
+            font-size: 14px;
+            .card3BodyTitle{
+                font-size: 18px;
+            }
+        }
+        .card3BodyButton{
+            width: 100px;
+            height: 48px;
+            font-size: 16px;
+            padding: 9px;
+            margin-top: 412px;
+        }
     }
 }

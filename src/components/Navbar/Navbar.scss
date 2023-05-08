@@ -7,6 +7,39 @@
     }
 }
 
+.navbar{
+   /*  height: calc(60px + 3.125vw); */
+    --bs-border-width: 0px;
+    --bs-navbar-toggler-focus-width: 0px;
+    .navbarBrand{
+        img{
+            max-width: 50vw;
+        }
+    }
+    .navbarLinks{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 12px;
+        .navbarLinksRefs{
+            padding-top: 8px;
+            font-size: calc(7.33px + 0.764vw);
+        }
+        .navbarLinksButton{
+            font-size: calc(6.66px + 0.695vw);
+            width: 200px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}
+
+/* @media screen and (max-width:767px) {
+    .navbar{
+        height: 72px;
+    }
+} */
+
+
 /* .navbarButton {
     color: white;
     font-weight: bold;
@@ -14,27 +47,6 @@
         color: white;
     }
 } */
-
-.navbar{
-    height: 120px;
-    --bs-border-width: 0px;
-    --bs-navbar-toggler-focus-width: 0px;
-    .navbarBrand{
-        position: relative;
-    }
-    .navbarLinks{
-        padding-top: 16px;
-        gap: 12px;
-        .navbarLinksRefs{
-            padding-top: 8px;
-        }
-        .navbarLinksButton{
-            width: 200px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-        }
-    }
-}
 
 /* CODE TO CHANGE NAVBAR ICON COLOR */
 /* .navbar-toggler-icon{
