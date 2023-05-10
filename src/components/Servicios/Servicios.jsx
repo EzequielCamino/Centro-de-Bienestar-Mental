@@ -37,7 +37,7 @@ function Servicios(){
                     <p className='squareText'>Atención en toda Bolivia</p>
                 </div>
             </section>
-            <section className='servicesCopy'>
+            <section className='servicesContainer'>
                 <div className='imgContainer1'>
                     <img className='img1' src="man-sitting-psychologist-s-office-talking-about-problems 1.png" alt="" />
                     <div className='textContainer'>
@@ -85,8 +85,8 @@ function Servicios(){
                     </div>
                 </div>
             </section>
-            <section className="scheduleCopy">
-                <div className="scheduleTextCopy">
+            <section className="bannerCita">
+                <div className="bannerText">
                     <h1>Tu mente merece atención: comienza a cuidar tu salud mental</h1>
                     <br/><br/>
                     <p>“La salud mental es un estado de bienestar mental que permite a las personas hacer frente a los momentos de estrés de la vida, desarrollar todas sus habilidades, podes aprender y trabajar adecuadamente y contribuir a la mejora de su comunidad.” (OMS)</p>

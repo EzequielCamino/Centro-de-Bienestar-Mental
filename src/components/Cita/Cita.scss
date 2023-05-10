@@ -1,18 +1,78 @@
 .formContainer{
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin-bottom: 8rem;
 
     .imgBack{
-        width: 100vh;
+        width: 1972.84px;
+        height: 1497.11px;
         position: absolute;
         z-index: -1;
-        opacity: 50%;
+        opacity: 80%;
     }
 
     .textContainer{
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        width: 547.82px;
+        height: 163px;
+        color: #fff;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 595px;
+        height: 893px;
+        padding: 3rem;
+        margin: 4rem 8rem 0 0;
+        background-color: #FBFAF8;
+        color: #766037;
+
+        label{
+            font-size: .8rem;
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+        }
+
+        input{
+            border: none;
+            padding: .3rem;
+            background: none;
+            border-bottom: 2px solid #766037;
+
+        }
+
+        .specialistContainer{
+
+
+            .radioContainer{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .personContainer{
+                    background-color: red;
+                    .person{
+                        width: 50%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+    
+        }
+        .submitButton{
+            padding: .7rem;
+            align-self: center;
+            width: 200px;
+            height: 56px;
+            background: #05A6C2;
+            color: #fff;
+        }
     }
 }
