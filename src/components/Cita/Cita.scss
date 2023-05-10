@@ -1,35 +1,45 @@
 .formContainer{
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 
     .imgBack{
         width: 1972.84px;
         height: 1497.11px;
         position: absolute;
         z-index: -1;
-        opacity: 80%;
+        opacity: 60%;
     }
 
     .textContainer{
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        margin-left: 6rem;
+        margin-right: 4rem;
         width: 547.82px;
         height: 163px;
         color: #fff;
+
+        h1{
+            font-size: 60px;
+        }
+
+        p{
+            font-size: 24px;
+        }
     }
 
     .form{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         width: 595px;
-        height: 893px;
-        padding: 3rem;
-        margin: 4rem 8rem 0 0;
+        height: 843px;
+        padding: 3.2rem;
+        margin: 6rem 8rem 10rem 0;
         background-color: #FBFAF8;
         color: #766037;
 
@@ -37,7 +47,7 @@
             font-size: .8rem;
             display: flex;
             flex-direction: column;
-            margin: 2rem;
+            margin: 1.5rem;
         }
 
         input{
@@ -49,24 +59,14 @@
         }
 
         .specialistContainer{
-
-
-            .radioContainer{
-                width: 90%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .personContainer{
-                    background-color: red;
+            display: flex;
                     .person{
                         width: 50%;
                         border-radius: 50%;
                     }
-                }
-            }
-    
         }
         .submitButton{
+            margin-top: 2rem;
             padding: .7rem;
             align-self: center;
             width: 200px;

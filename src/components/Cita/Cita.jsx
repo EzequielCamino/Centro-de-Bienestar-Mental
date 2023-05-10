@@ -17,7 +17,7 @@ function Citas(){
                     <input type="text" />
                 </label>
                 <label> Teléfono
-                    <input type="number" />
+                    <input type="telephone" />
                 </label>
                 <label> Correo electrónico
                     <input type="email" />
@@ -28,28 +28,21 @@ function Citas(){
                 <label> Selecciona entre nuestros especialistas
 
                     <div className='specialistContainer'>
-                    <div className='radioContainer'>
-                        <div className='personContainer'>
+                            <div className='personCard'>
                             <img className='person' src="Aillon.jpg" alt="" />
-                        </div>
-                    <input type="radio" value="1" checked/> Marcela Aillon
+                    <input type="radio" value="1" /> Marcela Aillon
                     <p>Psiquiatra</p>
-                    </div>
-
-                    <div className='radioContainer'>
-                        <div className='personContainer'>
+                            </div>
+                            <div className='personCard'>
                             <img className='person' src="Soliz.jpg" alt="" />
-                        </div>
-                    <input type="radio" value="1" checked/> Marcela Aillon
-                    <p>Psiquiatra</p>
-                    </div>
-                    <div className='radioContainer'>
-                        <div className='personContainer'>
+                    <input type="radio" value="1" />Daniela Soliz
+                    <p>Psicóloga</p>
+                            </div>
+                            <div className='personCard'>
                             <img className='person' src="Paz.jpg" alt="" />
-                        </div>
-                    <input type="radio" value="1" checked/> Marcela Aillon
-                    <p>Psiquiatra</p>
-                    </div>
+                    <input type="radio" value="1" /> Gabriela Paz
+                    <p>Psicóloga</p>
+                            </div>
                     </div>
                 </label> 
                 <label> Elige en que semana quieres asistir
