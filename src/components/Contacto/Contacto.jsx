@@ -7,7 +7,7 @@ const Contacto = () => {
     <>
       <div className="heroVector" alt="" />
       <section className="heroContacto">
-        <h1 className='heroContactoTitle'>Contáctanos</h1>
+        <h2 className='heroContactoTitle'>Contáctanos</h2>
         <div className='heroContactoCards'>
           <div className='heroContactoCard'>
             <img src="mapubication.svg" alt="map" />
@@ -40,6 +40,28 @@ const Contacto = () => {
               <Button href="https://www.facebook.com" target="_blank" className="socialnetworksBtn" variant="info"><img src="facebook.svg" alt="Facebook" /></Button>
             </div>
           </div>
+        </div>
+      </section>
+      <section className='contacto'>
+        <h2>¡Puedes consultarnos cualquier duda!</h2>
+        <p>Rellenando el siguiente formulario, podrás dejarnos tus consultas, dudas o sugerencias</p>
+        <div className='contactoConsulta'>
+          <iframe title='Centro de Rehabilitación Maps' src="https://www.google.com/maps/embed/v1/place?q=Dra+Marcela+Aillón+-+Centro+de+bienestar+mental,+Calle+15,+La+Paz,+Bolivia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          <form className='contactoConsultaForm' action="">
+                <label> Nombre completo
+                    <input required={true} type="text" />
+                </label>
+                <label> Teléfono
+                    <input required={true} type="tel" />
+                </label>
+                <label> Correo electrónico
+                    <input required={true} type="email" />
+                </label>
+                <label> Mensaje
+                    <textarea required={true} rows="4"></textarea>
+                </label>
+                <Button variant='info' type='submit' className='contactoConsultaFormButton'>Enviar mensaje</Button>
+            </form>
         </div>
       </section>
     </>
