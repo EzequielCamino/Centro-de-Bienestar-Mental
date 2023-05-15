@@ -1,5 +1,6 @@
 import "./Cita.scss";
 
+import { Button, Form } from "react-bootstrap";
 import {
   ContenedorBotonCentrado,
   Formulario,
@@ -8,7 +9,6 @@ import {
 } from "../../elementos/Formularios";
 import React, { useState } from "react";
 
-import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Input from "../Input/Input";
 import PersonCard from "../PersonCard/PersonCard";
@@ -67,7 +67,7 @@ function Citas() {
             estado={nombre}
             cambiarEstado={cambiarNombre}
             tipo="text"
-            label="Nombre"
+            label="Nombre Completo"
             name="usuario"
             leyendaError="El nombre solo puede contener letras y espacios."
             expresionRegular={expresiones.nombre}
@@ -91,24 +91,30 @@ function Citas() {
             expresionRegular={expresiones.telefono}
           />
           <label>
-            {" "}
             Seleccione el tipo de sesión
-            <select></select>
+            <select className="selectOption">
+              <option value="1">Presencial</option>
+              <option value="2">Virtual</option>
+            </select>
           </label>
           <label>
-            {" "}
             Selecciona entre nuestros especialistas
             <div className="specialistContainer">
-                <PersonCard  name={"Marcela Aillón"} img={"Aillon.jpg"} specialty={"Psiquiatra"}/>
-                <PersonCard  name={"Daniela Soliz"} img={"Soliz.jpg"} specialty={"Psicóloga"}/>
-                <PersonCard  name={"Gabriela Paz"} img={"Paz.jpg"} specialty={"Psicóloga"}/>
+                <PersonCard  name={"Marcela Aillón"} img={"Aillon.jpg"} specialty={"Psiquiatra"} value={1}/>
+                <PersonCard  name={"Daniela Soliz"} img={"Soliz.jpg"} specialty={"Psicóloga"} value={2}/>
+                <PersonCard  name={"Gabriela Paz"} img={"Paz.jpg"} specialty={"Psicóloga"} value={3}/>
             </div>
           </label>
-          <label>
-            {" "}
-            Elige en que semana quieres asistir
-            <input type="date" />
-          </label>
+          <div>
+                <div className="row">
+                    <div className="">
+                        <Form.Group controlId="dob">
+                            <Form.Label>Elige en que semana quieres asistir</Form.Label>
+                            <Form.Control type="date" name="dob"  />
+                        </Form.Group>
+                    </div>
+                </div>
+            </div>
           <input
             type="hidden"
             name="text"

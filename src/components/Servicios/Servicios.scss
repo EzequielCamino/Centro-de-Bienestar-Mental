@@ -1,216 +1,556 @@
-.heroVector{
-    height: 53vw;
-    width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3155)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3155' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23BA9F6B' stop-opacity='0.93'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
-    margin-top: 1%;
-    background-repeat: no-repeat;
+.heroVector {
+  height: 53vw;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3155)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3155' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23BA9F6B' stop-opacity='0.93'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  margin-top: 1%;
+  background-repeat: no-repeat;
 }
 
-.couch{
-    display: flex;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3159)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3159' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23766037' stop-opacity='0.95'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+.couch {
+  display: flex;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3159)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3159' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23766037' stop-opacity='0.95'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
     url("../../../public/Mask\ group-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    .heroText{
-        font-size: 150%;
-        font-weight: 400;
-        line-height: 32px;
-        height: 53vw;
-        margin-left: 5%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2%;
-
-        .title{
-            font-size: 4rem;
-            font-weight: 600;
-        }
-    }
-    .none {
-        width: 150%;
-    }
-}
-
-.numberContainer{
-    
-    display: flex;
-    justify-content: space-around;
-    margin: 8rem;
-    
-    .square{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0.5rem;
-        height: 148.2px;
-        width: 285px;
-        border-radius: 15px;
-        background-color: #025E6E;
-        color: #fff;
-        font-weight: 600;
-
-        .squareNumber{
-            font-size: 64px;
-            margin: 0;
-        }
-        .squareText{
-            font-size: 22px;
-            font-weight: 400;
-        }
-    }
-
-    .circle{
-        position: absolute;
-        left: 20rem;
-        z-index: -1;
-        width: 242px;
-        height: 235px;
-        background-color: rgba(181, 164, 144, 0.14);
-        border-radius: 50%;
-    }
-    .circle2{
-        position: absolute;
-        right: 20rem;
-        top: 57rem;
-        z-index: -1;
-        width: 242px;
-        height: 235px;
-        background-color: rgba(181, 164, 144, 0.14);
-        border-radius: 50%;
-    }
-}
-
-.servicesContainer{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 0;
-
-    .imgContainer1{
-        display: flex;
-        margin-top: 2rem;
-
-        .img1{
-            width: 50%;
-            height: 80%;
-        }
-
-        .textContainer{
-            width: 30%;
-            margin-left: 8rem;
-            margin-top: 3rem;
-
-            ul{
-                li{
-                    font-size: 1.5rem;
-                    font-weight: 300;
-                    margin-left: 1.3rem;
-                }
-            }
-
-            .serviceTitle{
-                font-size: 4rem;
-                color: #025E6E;
-            }
-            
-            .text3{
-                margin-top: 2rem;
-                font-size: 1.8rem;
-                color: #979797;
-            }
-        }
-    }
-
-    .imgContainer2{
-        display: flex;
-        justify-content: right;
-        padding: 3rem 0 3rem 0;
-        margin-top: 4rem;
-        background-color: #F5F5F5;
-
-        .img1{
-            width: 45%;
-        }
-
-        .textContainer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 30%;
-            margin-right: 10rem;
-
-            ul{
-                li{
-                    font-size: 1.5rem;
-                    font-weight: 300;
-                    margin-left: 1.3rem;
-                    margin-top: 2rem;
-                }
-            }
-
-            .serviceTitle{
-                font-size: 4rem;
-                color: #025E6E;
-            }
-            
-            .text3{
-                margin-top: 2rem;
-                font-size: 1.5rem;
-                color: #979797;
-            }
-        }
-    }
-
-    .imgContainer3{
-        display: flex;
-        margin: 2rem 0 6rem 0 ;
-
-        .img1{
-            width: 100%;
-        }
-
-        .textContainer{
-            width: 100%;
-            margin-left: 8rem;
-            margin-top: 3rem;
-
-            ul{
-                width: 80%;
-                column-count: 2;
-                li{
-                    font-size: 1.5rem;
-                    font-weight: 300;
-                    margin-left: 1.3rem;
-                }
-            }
-
-            .serviceTitle{
-                font-size: 4rem;
-                color: #025E6E;
-            }
-        }
-    }
-}
-
-.bannerCita{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .heroText {
     height: 53vw;
-    background-image: url("../../../public/Maskgroup.png");
-    background-size: cover;
+    margin-left: 5%;
+    color: white;
     display: flex;
-    align-items: center;
-    padding: 20%;
-    color: #F5F5F5;
-    .bannerText{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+
+    .title {
+      font-size: calc(20px + 2.0833vw);
+      line-height: 72px;
+      font-weight: 700;
     }
+    p {
+      font-size: calc(7.33px + 0.764vw);
+      line-height: 32px;
+    }
+  }
+  .none {
+    width: 150%;
+  }
+}
+
+.numberContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8rem;
+
+  .square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0.5rem;
+    height: 148.2px;
+    width: 285px;
+    border-radius: 15px;
+    background-color: #025e6e;
+    color: #fff;
+    font-weight: 600;
+
+    .squareNumber {
+      font-size: 64px;
+      margin: 0;
+    }
+    .squareText {
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    left: 20rem;
+    z-index: -1;
+    width: 242px;
+    height: 235px;
+    background-color: rgba(181, 164, 144, 0.14);
+    border-radius: 50%;
+  }
+  .circle2 {
+    position: absolute;
+    right: 45rem;
+    top: 95rem;
+    z-index: -1;
+    width: 242px;
+    height: 235px;
+    background-color: rgba(181, 164, 144, 0.14);
+    border-radius: 50%;
+  }
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 0;
+
+  .imgContainer1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .img1 {
+      width: 50%;
+      height: 80%;
+    }
+
+    .textContainer {
+      width: 30%;
+      margin-left: 8rem;
+      margin-top: 3rem;
+
+      ul {
+        li {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-left: 1.3rem;
+        }
+      }
+
+      .serviceTitle {
+        font-size: 4rem;
+        color: #025e6e;
+      }
+
+      .text3 {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        color: #979797;
+      }
+    }
+  }
+
+  .imgContainer2 {
+    display: flex;
+    justify-content: right;
+    padding: 3rem 0 3rem 0;
+    margin-top: 4rem;
+    background-color: #f5f5f5;
+
+    .img1 {
+      width: 45%;
+    }
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+      margin-right: 10rem;
+
+      ul {
+        li {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-left: 1.3rem;
+          margin-top: 2rem;
+        }
+      }
+
+      .serviceTitle {
+        font-size: 4rem;
+        color: #025e6e;
+      }
+
+      .text3 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        color: #979797;
+      }
+    }
+  }
+
+  .imgContainer3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0 6rem 0;
+
+    .img1 {
+      width: 100%;
+    }
+
+    .textContainer {
+      width: 100%;
+      margin-left: 8rem;
+      margin-top: 3rem;
+
+      ul {
+        width: 80%;
+        column-count: 2;
+        li {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-left: 1.3rem;
+        }
+      }
+
+      .serviceTitle {
+        font-size: 4rem;
+        color: #025e6e;
+      }
+    }
+  }
+}
+
+.bannerCita {
+  height: 53vw;
+  background-image: url("../../../public/Maskgroup.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 20%;
+  color: #f5f5f5;
+
+  .bannerText {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    h1 {
+      font-size: calc(20px + 2.0833vw);
+    }
+    p {
+      font-size: calc(7.33px + 0.764vw);
+    }
+    .scheduleTextSecondary {
+      margin-top: 2vw;
+    }
+    .scheduleTextMobile {
+      display: none;
+    }
+    .scheduleTextBtn {
+      font-size: calc(6.66px + 0.695vw);
+      width: 26%;
+      padding-top: 0.42vw;
+      padding-bottom: 0.42vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .numberContainer {
+    margin: 6rem;
+
+    .square {
+      padding: 1.5rem;
+      margin: 0.5rem;
+      height: 148.2px;
+      width: 285px;
+
+      .squareNumber {
+        font-size: 45px;
+      }
+      .squareText {
+        font-size: 18px;
+      }
+    }
+
+    .circle {
+      left: 15rem;
+      width: 200px;
+      height: 200px;
+    }
+    .circle2 {
+      right: 12rem;
+      top: 42rem;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .servicesContainer {
+    .imgContainer1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      .textContainer {
+        width: 40%;
+
+        .text3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .imgContainer3 {
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 2rem 2rem 6rem 0;
+
+      .img1 {
+        width: 50%;
+      }
+
+      .textContainer {
+        width: 100%;
+        margin-left: 2rem;
+        margin-top: 3rem;
+
+        ul {
+          width: 100%;
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .couch {
+    .heroText {
+      text-align: center;
+      margin-left: 0%;
+      margin: 5%;
+      align-items: center;
+      height: 767px;
+      .title {
+        font-size: 36px;
+        justify-content: center;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .none {
+      display: none;
+    }
+  }
+  .numberContainer {
+    margin: 4rem;
+
+    .square {
+      .squareNumber {
+        font-size: 40px;
+      }
+      .squareText {
+        font-size: 15px;
+      }
+    }
+
+    .circle {
+      top: 65rem;
+      left: 10rem;
+      width: 150px;
+      height: 150px;
+    }
+    .circle2 {
+      right: 8rem;
+      top: 58rem;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .servicesContainer {
+    width: 100%;
+    flex-direction: column;
+    .imgContainer1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img1 {
+        width: 80%;
+      }
+      .textContainer {
+        margin: 3rem;
+        width: 70%;
+      }
+    }
+
+    .imgContainer2 {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 2rem;
+
+      .img1 {
+        width: 90%;
+      }
+
+      .textContainer {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+
+        .serviceTitle {
+          margin-top: 3rem;
+        }
+
+        .text3 {
+          width: 70%;
+          justify-content: center;
+          margin-top: 2rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .imgContainer3 {
+      flex-direction: column;
+
+      .img1 {
+        width: 90%;
+      }
+
+      .textContainer {
+        width: 80%;
+        margin-left: 2rem;
+        margin-top: 3rem;
+
+        ul {
+          width: 100%;
+          margin-top: 2rem;
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bannerCita {
+    height: 739px;
+
+    .bannerText {
+      p {
+        font-size: 15px;
+      }
+      .scheduleTextSecondary {
+        margin-top: 2vw;
+      }
+      .scheduleTextMobile {
+        display: none;
+      }
+      .scheduleTextBtn {
+        font-size: 18px;
+        width: 245px;
+        height: 48px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .couch {
+    .heroText {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .numberContainer {
+    margin: 1rem;
+  
+    .square {
+  
+      .squareNumber {
+        font-size: 50px;
+      }
+      .squareText {
+        font-size: 20px;
+      }
+    }
+  
+    .circle, 
+    .circle2 {
+      display: none;
+    }
+  }
+
+  .numberContainer {
+    flex-wrap: wrap;
+  }
+
+  .servicesContainer {
+    .imgContainer1 {
+      .textContainer {
+
+        ul {
+            li {
+              font-size: 1.2rem;
+              margin: 0;
+            }
+          }
+        margin: 3rem;
+        width: 70%;
+
+        .serviceTitle {
+          font-size: 3rem;
+        }
+        .text3 {
+            margin-top: 0rem;
+            font-size: 1rem;
+          }
+      }
+    }
+
+    .imgContainer2 {
+        margin-top: 0rem;
+      .textContainer {
+
+        ul {
+            li {
+              font-size: 1.2rem;
+              margin: 0;
+            }
+          }
+        .serviceTitle {
+          font-size: 3rem;
+        }
+
+        .text3 {
+          margin-top: 0rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .imgContainer3 {
+      flex-direction: column;
+
+      .img1 {
+        width: 90%;
+      }
+
+      .textContainer {
+
+        ul {
+            li {
+              font-size: 1.1rem;
+              margin: 0;
+            }
+          }
+        .serviceTitle {
+          font-size: 3rem;
+        }
+    }
+    }
+  }
+
+  .bannerCita {
+    height: 639px;
+  }
 }

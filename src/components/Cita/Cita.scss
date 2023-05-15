@@ -1,78 +1,188 @@
-.formContainer{
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 18rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .imgBack {
     width: 100%;
-    height: 893px;
-    margin-bottom: 7rem;
+    height: 1497.11px;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 60%;
+  }
 
-    .imgBack{
-        width: 1972.84px;
-        height: 1497.11px;
-        position: absolute;
-        z-index: -1;
-        opacity: 60%;
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    width: 30%;
+    height: 163px;
+    color: #fff;
+
+    h1 {
+      font-size: 60px;
     }
 
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 595px;
+    height: 923px;
+    margin: 6rem;
+    padding: 4rem;
+    background-color: #fbfaf8;
+    border-radius: 10px;
+    color: #766037;
+
+    label {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      margin: 0.2rem;
+      font-weight: 600;
+    }
+
+    input {
+      border: none;
+      margin-top: 0.5rem;
+      background: none;
+      border-bottom: 1px solid #766037;
+    }
+
+    .selectOption{
+        background-color: #fbfaf8;
+        border: none;
+        border-bottom: 1px solid #766037;
+        appearance: none;
+        margin-top: 1rem;
+        outline: none;
+        padding: 3px 0;
+    }
+
+    .specialistContainer {
+      display: grid;
+      grid-template-columns: 235px 300px ;
+      gap: 1rem;
+      width: 10%;
+      padding: 1.2rem 0;
+    }
+
+    .submitButton {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding: 0.7rem;
+      align-self: center;
+      width: 200px;
+      height: 56px;
+      background: #05a6c2;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .formContainer{
+    margin-bottom: 0rem;
+    
+    .textContainer {
+      margin-left: 6rem;
+      margin-right: 4rem;
+  
+      h1 {
+        font-size: 45px;
+      }
+  
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .form {
+      width: 495px;
+      height: 853px;
+      padding: 3rem;
+  
+      label {
+        font-size: 12px;
+      }
+
+      .specialistContainer {
+        gap: 1rem;
+        padding: 1.2rem 0;
+      }
+      .submitButton {
+        padding: 0.5rem;
+        width: 180px;
+        height: 50px;
+        
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .formContainer{
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+    padding-bottom: 5rem;
+    .imgBack {
+      height: 2400px;
+    }
     .textContainer{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 6rem;
-        margin-right: 4rem;
-        width: 547.82px;
-        height: 163px;
-        color: #fff;
-
-        h1{
-            font-size: 60px;
-        }
-
-        p{
-            font-size: 24px;
-        }
+      width: 60%;
+      text-align: center;
+      margin: 3rem 0;
     }
-
     .form{
+        width: 495px;
+        height: 963px;
+        padding: 3rem;
+      .specialistContainer {
         display: flex;
         flex-direction: column;
-        width: 595px;
-        height: 813px;
-        padding: 5rem;
-        margin: 6rem 8rem 10rem 0;
-        background-color: #FBFAF8;
-        color: #766037;
-
-        label{
-            font-size: .8rem;
-            display: flex;
-            flex-direction: column;
-            margin: .2rem;
-        }
-
-        input{
-            border: none;
-            margin-top: .5rem;
-            background: none;
-            border-bottom: 2px solid #766037;
-
-        }
-
-        .specialistContainer{
-            display: flex;
-            gap: 1.2rem;
-            width: 150%;
-            padding: 1.2rem 0;
-        }
-        .submitButton{
-            margin-top: 2rem;
-            padding: .7rem;
-            align-self: center;
-            width: 200px;
-            height: 56px;
-            background: #05A6C2;
-            color: #fff;
-        }
+        margin-left: 3rem;
+      }
     }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .formContainer{
+    .imgBack {
+      height: 2600px;
+    }
+      
+    
+    .textContainer{
+      width: 60%;
+      text-align: center;
+      margin: 5rem 0;
+      h1 {
+        font-size: 35px;
+      }
+  
+      p {
+        margin-top: 2rem;
+        font-size: 13px;
+      }
+    }
+    .form{
+        width: 395px;
+        height: 963px;
+        padding: 2.5rem;
+      .specialistContainer {
+        margin-left: 1rem;
+      }
+    }
+  }
 }

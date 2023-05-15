@@ -1,14 +1,18 @@
+import './PersonCard.scss'
+
 import Card from 'react-bootstrap/Card';
 import React from 'react'
 
-const PersonCard = ({img, specialty, name}) => {
+const PersonCard = ({img, specialty, name, value}) => {
   return (
-    <Card style={{display:'flex'}}>
-      <Card.Body style={{display:'flex' ,flexWrap:'wrap', flexDirection:'row'}}>
-      <Card.Img variant="top" src={img} style={{borderRadius:'50%'}}/>
-        <Card.Title>{name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{specialty}</Card.Subtitle>
-        <input type="radio" value="1" /> 
+    <Card className='containerPerson'>
+      <Card.Body className='cardPerson'>
+      <Card.Img className='imgPerson' variant="top" src={img} />
+      <div className='nameContainer'>
+        <Card.Title className='textPerson'>{name}</Card.Title>
+        <Card.Subtitle id='specialty' className="mb-2 text-muted">{specialty}</Card.Subtitle>
+      </div>
+        <input className='inputRadio' type="radio" value={value} name='values'/> 
       </Card.Body>
     </Card>
   )

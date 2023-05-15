@@ -1,0 +1,76 @@
+.containerPerson{
+    width: 235.02px;
+    height: 78px;
+    border: none;
+    -webkit-box-shadow: -1px 11px 23px -6px rgba(107,91,107,0.69);
+-moz-box-shadow: -1px 11px 23px -6px rgba(107,91,107,0.69);
+box-shadow: -1px 11px 23px -6px rgba(107,91,107,0.69);
+}
+
+.cardPerson{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+}
+
+.textPerson{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#specialty{
+    font-size: 12px;
+}
+
+.imgPerson{
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+}
+
+.nameContainer{
+    margin-left: 1rem;
+}
+
+.inputRadio{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+    .containerPerson{
+        width: 200px;
+    }
+    .textPerson{
+        font-size: 12px;
+    }
+    
+    #specialty{
+        font-size: 10px;
+    }
+    
+    .imgPerson{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .containerPerson{
+        width: 300px;
+    }
+    .textPerson{
+        font-size: 15px;
+    }
+    
+    #specialty{
+        font-size: 12px;
+    }
+    
+    .imgPerson{
+        width: 53px;
+        height: 53px;
+    }
+  }
