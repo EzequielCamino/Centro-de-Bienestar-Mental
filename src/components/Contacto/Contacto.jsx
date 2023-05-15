@@ -47,19 +47,21 @@ const Contacto = () => {
         <p>Rellenando el siguiente formulario, podrás dejarnos tus consultas, dudas o sugerencias</p>
         <div className='contactoConsulta'>
           <iframe title='Centro de Rehabilitación Maps' src="https://www.google.com/maps/embed/v1/place?q=Dra+Marcela+Aillón+-+Centro+de+bienestar+mental,+Calle+15,+La+Paz,+Bolivia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-          <form className='contactoConsultaForm' action="">
+          <form className='contactoConsultaForm' action="https://formsubmit.co/ffc7ed9b167ec049ba136e477abb484f" method='POST'>
                 <label> Nombre completo
-                    <input required={true} type="text" />
+                    <input required={true} type="text" name='Name'/>
                 </label>
                 <label> Teléfono
-                    <input required={true} type="tel" />
+                    <input required={true} type="tel" name='Telephone'/>
                 </label>
                 <label> Correo electrónico
-                    <input required={true} type="email" />
+                    <input required={true} type="email" name='E-mail'/>
                 </label>
                 <label> Mensaje
-                    <textarea required={true} rows="4"></textarea>
+                    <textarea required={true} rows="4" name='Message'></textarea>
                 </label>
+                <input type="hidden" name="_next" value="http://localhost:3000/contacto"/>
+                <input type="hidden" name="_captcha" value="false"></input>
                 <Button variant='info' type='submit' className='contactoConsultaFormButton'>Enviar mensaje</Button>
             </form>
         </div>

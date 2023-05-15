@@ -7,7 +7,7 @@ function Servicios(){
 
     return(
         <>
-            <div className="heroVector" alt="" />
+            <div className="heroVector2" alt="" />
             <section className="couch">
                 <div className="heroText">
                     <h1 className='title'>Te informamos sobre nuestros servicios</h1>
@@ -85,6 +85,7 @@ function Servicios(){
                     </div>
                 </div>
             </section>
+            <div className="heroVector3" alt="" />
             <section className="bannerCita">
                 <div className="bannerText">
                     <h1>Tu mente merece atención: comienza a cuidar tu salud mental</h1>

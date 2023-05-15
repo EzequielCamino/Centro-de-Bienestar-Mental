@@ -1,4 +1,4 @@
-.heroVector {
+.heroVector2 {
   height: 53vw;
   width: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3155)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3155' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23BA9F6B' stop-opacity='0.93'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
@@ -9,16 +9,21 @@
   background-repeat: no-repeat;
 }
 
+.heroVector3{
+  @extend .heroVector2;
+  background-image: url("data:image/svg+xml,%3Csvg width='1442' height='739' viewBox='0 0 1442 739' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:multiply'%3E%3Cpath d='M703.365 681.607C417.585 753.758 115.38 740.093 0 724.242V0H1442V739C1314.86 689.806 989.146 609.456 703.365 681.607Z' fill='%23766037'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .couch {
   display: flex;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='767' viewBox='0 0 1440 767' fill='none'%3E%3Cpath d='M702.39 707.433C417.006 782.317 115.22 768.135 0 751.683V0H1440V767C1313.04 715.942 987.774 632.548 702.39 707.433Z' fill='url(%23paint0_linear_292_3159)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_292_3159' x1='97.6356' y1='273.5' x2='1363.89' y2='273.5' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.341667' stop-color='%23766037' stop-opacity='0.95'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='614' viewBox='0 0 1440 614' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M702.39 566.315C417.006 626.262 115.22 614.908 0 601.738V0H1440V614C1313.04 573.127 987.774 506.368 702.39 566.315Z' fill='url(%23paint0_linear_345_1776)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_345_1776' x1='97.6356' y1='218.943' x2='1363.89' y2='218.943' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.273958' stop-color='%23766037' stop-opacity='0.81'/%3E%3Cstop offset='0.492708' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A"),
     url("../../../public/Mask\ group-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   .heroText {
     height: 53vw;
-    margin-left: 5%;
+    margin-left: 10%;
     color: white;
     display: flex;
     flex-direction: column;
