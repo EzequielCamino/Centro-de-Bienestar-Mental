@@ -61,7 +61,7 @@ const Contacto = () => {
                     <textarea required={true} rows="4" name='Message'></textarea>
                 </label>
                 <input type="hidden" name="_next" value="http://localhost:3000/contacto"/>
-                <input type="hidden" name="_captcha" value="false"></input>
+                <input type="hidden" name="_captcha" value="false"/>
                 <Button variant='info' type='submit' className='contactoConsultaFormButton'>Enviar mensaje</Button>
             </form>
         </div>
