@@ -15,14 +15,12 @@ import PersonCard from "../PersonCard/PersonCard";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 
 function Citas() {
-  const [usuario, cambiarUsuario] = useState({ campo: "", valido: null });
   const [nombre, cambiarNombre] = useState({ campo: "", valido: null });
   const [correo, cambiarCorreo] = useState({ campo: "", valido: null });
   const [telefono, cambiarTelefono] = useState({ campo: "", valido: null });
   const [formularioValido, cambiarFormularioValido] = useState(null);
 
   const expresiones = {
-    usuario: /^[a-zA-Z0-9_-]{4,16}$/, // Letras, numeros, guion y guion_bajo
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/, // 7 a 14 numeros.
@@ -32,13 +30,11 @@ function Citas() {
     e.preventDefault();
 
     if (
-      usuario.valido === "true" &&
       nombre.valido === "true" &&
       correo.valido === "true" &&
       telefono.valido === "true"
     ) {
       cambiarFormularioValido(true);
-      cambiarUsuario({ campo: "", valido: "" });
       cambiarNombre({ campo: "", valido: null });
       cambiarCorreo({ campo: "", valido: null });
       cambiarTelefono({ campo: "", valido: null });
@@ -62,7 +58,8 @@ function Citas() {
             posible para la confirmar de la cita.
           </p>
         </div>
-        <Formulario className="form" action="https://formsubmit.co/santiserrato0910@gmail.com" method="POST" onSubmit={onSubmit}>
+        <form action="https://formsubmit.co/santiserrato0910@gmail.com" method="POST">
+        <Formulario className="form"  onSubmit={onSubmit}>
           <Input
             estado={nombre}
             cambiarEstado={cambiarNombre}
@@ -137,6 +134,7 @@ function Citas() {
             )}
           </ContenedorBotonCentrado>
         </Formulario>
+        </form>
       </section>
     </>
   );

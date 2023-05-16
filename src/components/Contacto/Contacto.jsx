@@ -1,6 +1,7 @@
-import React from 'react'
 import './Contacto.scss'
+
 import { Button } from 'react-bootstrap'
+import React from 'react'
 
 const Contacto = () => {
   return (
@@ -22,7 +23,7 @@ const Contacto = () => {
             <h3>Comunícate al</h3>
             <p>+59 1 767 - 42631</p>
             <h3 className='heroContactoCardSecondaryh3'>Escríbenos a</h3>
-            <p>xxxxx@gmail.com</p>
+            <p>centrodebienestarmental <br /> @outlook.com </p>
           </div>
           <div className='heroContactoCard'>
             <img src="clock.svg" alt="clock" />

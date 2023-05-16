@@ -1,10 +1,11 @@
-import React from "react";
+import './Home.scss'
+
 import { Button } from "react-bootstrap";
 import Card1 from "../Card 1/Card 1";
 import Card2 from "../Card 2/Card 2";
 import Card3 from "../Card 3/Card 3";
 import CarouselMobile from "../Carousel/Carousel";
-import './Home.scss'
+import React from "react";
 
 function Home() {
     return (
@@ -53,7 +54,7 @@ function Home() {
                     <h1 className="scheduleTextMobile">Tu salud mental si importa ¡Comienza a cuidarla hoy mismo!</h1>
                     <p className="scheduleTextSecondary">Cuidar tu salud mental es tan importante como cuidar la salud física. Una buena salud mental nos permite disfrutar una vida plenamente, mantener relaciones saludables y hacer frente a los desafíos que se nos presentan.</p>
                     <p>¡Estamos para ayudarte!</p>
-                    <Button href="/citas" className="scheduleTextBtn" variant="info">Agenda una cita</Button>
+                    <Button href="/citas" className="heroTextBtn" variant="info">Agenda una cita</Button>
                 </div>
                 {/* <div className="none"/> */}
             </section>

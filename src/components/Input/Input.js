@@ -28,7 +28,7 @@ const ComponenteInput = ({estado, cambiarEstado, tipo, label, name, leyendaError
 			<GrupoInput>
 				<Input 
 					type={tipo}
-					id={name}
+					name={name}
 					value={estado.campo}
 					onChange={onChange}
 					onKeyUp={validacion}

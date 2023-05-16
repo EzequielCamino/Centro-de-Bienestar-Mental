@@ -15,14 +15,21 @@
         flex-direction: column;
         gap: 0.7vw;
         .card3BodyTitle{
+            font-family: 'Roboto';
+        font-weight: 600;
             font-size: calc(8.33px + 0.868vw);
             color: rgba(118, 96, 55, 1);
         }
+        .card3text{
+            font-family: 'Open sans';
+        font-weight: 400;
+        }
     }
     .card3BodyButton{
-        font-size: calc(6.66px + 0.695vw);
+        font-size: 20px;
+        width: 283px;
+        height: 56px;
         position: absolute;
-        width: 37%;
         padding-top: 0.42vw;
         padding-bottom: 0.42vw;
         margin-left: 2vw;

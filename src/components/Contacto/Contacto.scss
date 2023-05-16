@@ -1,258 +1,269 @@
-.heroVector{
-    height: 39vw;
-    width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg width='1440' height='560' viewBox='0 0 1440 560' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M702.39 516.509C417.006 571.183 115.22 560.828 0 548.817V0H1440V560C1313.04 522.722 987.774 461.834 702.39 516.509Z' fill='url(%23paint0_linear_351_1880)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_351_1880' x1='97.6356' y1='199.687' x2='1363.89' y2='199.687' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BA9F6B' stop-opacity='0.65'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-    background-size: cover;
-    background-position-y: -6vw;
-    position: absolute;
-    z-index: -1;
-    margin-top: 1%;
-    background-repeat: no-repeat;
+.heroVector {
+  height: 39vw;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='560' viewBox='0 0 1440 560' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M702.39 516.509C417.006 571.183 115.22 560.828 0 548.817V0H1440V560C1313.04 522.722 987.774 461.834 702.39 516.509Z' fill='url(%23paint0_linear_351_1880)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_351_1880' x1='97.6356' y1='199.687' x2='1363.89' y2='199.687' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BA9F6B' stop-opacity='0.65'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-position-y: -6vw;
+  position: absolute;
+  z-index: -1;
+  margin-top: 1%;
+  background-repeat: no-repeat;
 }
 
-.heroContacto{
-    display: flex;
-    flex-direction: column;
-    background-image: url("data:image/svg+xml,%3Csvg width='1440' height='560' viewBox='0 0 1440 560' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M702.39 516.509C417.006 571.183 115.22 560.828 0 548.817V0H1440V560C1313.04 522.722 987.774 461.834 702.39 516.509Z' fill='url(%23paint0_linear_351_1880)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_351_1880' x1='97.6356' y1='199.687' x2='1363.89' y2='199.687' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BA9F6B' stop-opacity='0.65'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A"),
+.heroContacto {
+  display: flex;
+  flex-direction: column;
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='560' viewBox='0 0 1440 560' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M702.39 516.509C417.006 571.183 115.22 560.828 0 548.817V0H1440V560C1313.04 522.722 987.774 461.834 702.39 516.509Z' fill='url(%23paint0_linear_351_1880)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_351_1880' x1='97.6356' y1='199.687' x2='1363.89' y2='199.687' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BA9F6B' stop-opacity='0.65'/%3E%3Cstop offset='1' stop-color='%23766037' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A"),
     url("../../../public/hero-img-contacto.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -6vw;
-    height: 39vw;
-    margin-bottom: 9vw;
-    .heroContactoTitle{
-        color: white;
-        font-size: 3.125vw;
-        margin: auto;
-        margin-top: 9.375vw;
-    }
-    .heroContactoCards{
-        display: flex;
-        align-content: center;
-        gap: 1.56vw;
-        margin: auto;
-        margin-top: 6vw;
-        left: 17.972vw;
-        .heroContactoCard{
-            height: 20vw;
-            width: 14.844vw;
-            background: #FBFAF8;
-            border-radius: 15px;
-            box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.49);
-            -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.49);
-            -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.49);
-            padding: 1.5vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                font-size: calc(6.66px + 0.695vw);
-                color: rgba(2, 94, 110, 1);
-                margin-bottom: 0.4166vw;
-            }
-            img{
-                max-width: 2.6vw;
-                max-height: 2.6vw;
-                margin-bottom: 0.9375vw;
-            }
-            p{
-                font-size: calc(5.33px + 0.555vw);
-                color: rgba(47, 38, 22, 1);
-                text-align: center;
-                margin-bottom: 0.4166vw;
-            }
-            .heroContactoCardImgs{
-                display: flex;
-                gap: 0.4vw;
-            }
-            .heroContactoCardSecondaryh3{
-                margin-top: 0.833vw;
-            }
-            .socialnetworks{
-                display: flex;
-                gap: 0.6vw;
-                .socialnetworksBtn{
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    min-width: 1.823vw;
-                    max-width: 1.823vw;
-                    min-height: 1.823vw;
-                    max-height: 1.823vw;
-                    img{
-                        min-width: 1vw;
-                        max-width: 1vw;
-                        min-height: 1vw;
-                        max-height: 1vw;
-                    }
-                }
-            }
-        }
-    }
-}
-.contacto{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -6vw;
+  height: 39vw;
+  margin-bottom: 9vw;
+  .heroContactoTitle {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: white;
+    font-size: 3.125vw;
+    margin: auto;
+    margin-top: 9.375vw;
+  }
+  .heroContactoCards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -4vw;
-    h2{
-        font-size: calc(13.33px + 1.388vw);
-        color: rgba(118, 96, 55, 1);
-        margin-bottom: 0.73vw;
-    }
-    p{
-        font-size: calc(7.33px + 0.764vw);
-        color: rgba(118, 96, 55, 1);
-        margin-bottom: 1.72vw;
-    }
-    .contactoConsulta{
+    align-content: center;
+    gap: 1.56vw;
+    margin: auto;
+    margin-top: 6vw;
+    left: 17.972vw;
+    .heroContactoCard {
+      height: 20vw;
+      width: 14.844vw;
+      background: #fbfaf8;
+      border-radius: 15px;
+      box-shadow: 0px 4px 20px rgba(126, 106, 67, 0.1);
+      padding: 1.5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        font-family: "Roboto";
+        font-weight: 600;
+        font-size: calc(6.66px + 0.695vw);
+        color: rgba(2, 94, 110, 1);
+        margin-bottom: 0.4166vw;
+      }
+      img {
+        max-width: 2.6vw;
+        max-height: 2.6vw;
+        margin-bottom: 0.9375vw;
+      }
+      p {
+        font-weight: 400;
+        font-family: "Open sans";
+        font-size: calc(5.33px + 0.555vw);
+        color: rgba(47, 38, 22, 1);
+        text-align: center;
+        margin-bottom: 0.4166vw;
+      }
+      .heroContactoCardImgs {
         display: flex;
-        gap: 1.5625vw;
-        align-items: center;
-        margin-bottom: 5vw;
-        iframe{
-            width: 35vw;
-            height: 35vw;
+        gap: 0.4vw;
+      }
+      .heroContactoCardSecondaryh3 {
+        margin-top: 0.833vw;
+      }
+      .socialnetworks {
+        display: flex;
+        gap: 0.6vw;
+        .socialnetworksBtn {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          min-width: 1.823vw;
+          max-width: 1.823vw;
+          min-height: 1.823vw;
+          max-height: 1.823vw;
+          img {
+            min-width: 1vw;
+            max-width: 1vw;
+            min-height: 1vw;
+            max-height: 1vw;
+          }
         }
-        .contactoConsultaForm{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35vw;
-            height: 35vw;
-            padding: 2.24vw;
-            background-color: #FBFAF8;
-            color: rgba(118, 96, 55, 1);
-            label{
-                font-size: calc(4.66px + 0.486vw);
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 1.25vw;
-            }
-            input{
-                border: none;
-                background: none;
-                border-bottom: 0.12vw solid rgba(118, 96, 55, 0.5);
-                height: 2.5vw;
-            }
-            textarea{
-                border: none;
-                background: none;
-                border-bottom: 0.12vw solid rgba(118, 96, 55, 0.5);
-                resize: none;
-            }
-            .contactoConsultaFormButton{
-                margin-top: 1.98vw;
-                align-self: center;
-                width: 10.41666vw;
-                height: 2.91666vw;
-                font-size: 1.04vw;
-            }
-        }
+      }
     }
+  }
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4vw;
+  h2 {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: calc(13.33px + 1.388vw);
+    color: rgba(118, 96, 55, 1);
+    margin-bottom: 0.73vw;
+  }
+  p {
+    font-weight: 400;
+        font-family: "Open sans";
+    font-size: calc(7.33px + 0.764vw);
+    color: rgba(118, 96, 55, 1);
+    margin-bottom: 1.72vw;
+  }
+  .contactoConsulta {
+    display: flex;
+    gap: 1.5625vw;
+    align-items: center;
+    margin-bottom: 5vw;
+    iframe {
+      width: 35vw;
+      height: 35vw;
+    }
+    .contactoConsultaForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35vw;
+      height: 35vw;
+      padding: 2.24vw;
+      background-color: #fbfaf8;
+      color: rgba(118, 96, 55, 1);
+      box-shadow: 0px 4px 20px rgba(126, 106, 67, 0.1);
+      label {
+        font-weight: 600;
+        font-family: "Open sans";
+        font-size: calc(4.66px + 0.486vw);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.25vw;
+      }
+      input {
+        border: none;
+        background: none;
+        border-bottom: 0.12vw solid rgba(118, 96, 55, 0.5);
+        height: 2.5vw;
+      }
+      textarea {
+        border: none;
+        background: none;
+        border-bottom: 0.12vw solid rgba(118, 96, 55, 0.5);
+        resize: none;
+      }
+      .contactoConsultaFormButton {
+        margin-top: 1.98vw;
+        align-self: center;
+        width: 200px;
+        height: 56px;
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-@media screen and (max-width:767px) {
-    .heroVector{
-        height: 387px;
+@media screen and (max-width: 767px) {
+  .heroVector {
+    height: 387px;
+  }
+  .heroContacto {
+    height: 387px;
+    background-position: 45%;
+    margin-bottom: 1350px;
+    .heroContactoTitle {
+      font-size: 36px;
+      margin-top: 112px;
     }
-    .heroContacto{
-        height: 387px;
-        background-position: 45%;
-        margin-bottom: 1350px;
-        .heroContactoTitle{
-            font-size: 36px;
-            margin-top: 112px;
+    .heroContactoCards {
+      flex-direction: column;
+      top: 259px;
+      left: 15.4125vw;
+      gap: 29px;
+      .heroContactoCard {
+        padding: 6.8vw;
+        height: 350px;
+        width: 285px;
+        img {
+          max-width: 50px;
+          max-height: 50px;
+          margin-bottom: 18px;
         }
-        .heroContactoCards{
-            flex-direction: column;
-            top: 259px;
-            left: 15.4125vw;
-            gap: 29px;
-            .heroContactoCard{
-                padding: 6.8vw;
-                height: 350px;
-                width: 285px;
-                img{
-                    max-width: 50px;
-                    max-height: 50px;
-                    margin-bottom: 18px;
-                }
-                h3{
-                    font-size: 20px;
-                    margin-bottom: 8px;
-                }
-                p{
-                    font-size: 16px;
-                    margin-bottom: 8px;
-                }
-                .heroContactoCardImgs{
-                    gap: 8px;
-                }
-                .heroContactoCardSecondaryh3{
-                    margin-top: 3vw;
-                }
-                .socialnetworks{
-                    gap: 2.67vw;
-                    .socialnetworksBtn{
-                        min-width: 8.495vw;
-                        max-width: 8.495vw;
-                        min-height: 8.495vw;
-                        max-height: 8.495vw;
-                        img{
-                            min-width: 4.49vw;
-                            max-width: 4.49vw;
-                            min-height: 4.49vw;
-                            max-height: 4.49vw;
-                        }
-                    }
-                }
+        h3 {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+        .heroContactoCardImgs {
+          gap: 8px;
+        }
+        .heroContactoCardSecondaryh3 {
+          margin-top: 3vw;
+        }
+        .socialnetworks {
+          gap: 2.67vw;
+          .socialnetworksBtn {
+            min-width: 8.495vw;
+            max-width: 8.495vw;
+            min-height: 8.495vw;
+            max-height: 8.495vw;
+            img {
+              min-width: 4.49vw;
+              max-width: 4.49vw;
+              min-height: 4.49vw;
+              max-height: 4.49vw;
             }
+          }
         }
+      }
     }
-    .contacto{
-        margin: 50px;
-        h2{
-            font-size: 24px;
-            margin-bottom: 13.73px;
-            text-align: center;
-        }
-        p{
-            font-size: 15px;
-            margin-bottom: 13.73px;
-            text-align: center;
-        }
-        .contactoConsulta{
-            display: flex;
-            flex-direction: column-reverse;
-            gap: 30px;
-            iframe{
-                width: 328px;
-                height: 569px;
-            }
-            .contactoConsultaForm{
-                width: 328px;
-                height: 569px;
-                padding: 32px;
-                label{
-                    font-size: 14px;
-                    margin-bottom: 24px;
-                }
-                input{
-                    border-bottom: 2px solid rgba(118, 96, 55, 0.5);
-                    height: 30px;
-                    margin-top: 5px;
-                }
-                textarea{
-                    border-bottom: 2px solid rgba(118, 96, 55, 0.5);
-                }
-                .contactoConsultaFormButton{
-                    width: 200px;
-                    height: 48px;
-                    font-size: 18px;
-                }
-            }
-        }
+  }
+  .contacto {
+    margin: 50px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 13.73px;
+      text-align: center;
     }
+    p {
+      font-size: 15px;
+      margin-bottom: 13.73px;
+      text-align: center;
+    }
+    .contactoConsulta {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 30px;
+      iframe {
+        width: 328px;
+        height: 569px;
+      }
+      .contactoConsultaForm {
+        width: 328px;
+        height: 569px;
+        padding: 32px;
+        label {
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+        input {
+          border-bottom: 2px solid rgba(118, 96, 55, 0.5);
+          height: 30px;
+          margin-top: 5px;
+        }
+        textarea {
+          border-bottom: 2px solid rgba(118, 96, 55, 0.5);
+        }
+        .contactoConsultaFormButton {
+          width: 200px;
+          height: 48px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

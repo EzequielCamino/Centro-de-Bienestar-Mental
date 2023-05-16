@@ -1,6 +1,8 @@
-import React from "react";
-import { Button, Card } from "react-bootstrap";
 import './Card 3.scss'
+
+import { Button, Card } from "react-bootstrap";
+
+import React from "react";
 
 function Card3({specialist, title, boldtext, text}) {
     return (
@@ -8,7 +10,7 @@ function Card3({specialist, title, boldtext, text}) {
             <Card.Img variant="top" src={specialist} />
             <Card.Body className="card3Body">
                 <Card.Title className="card3BodyTitle">{title}</Card.Title>
-                <Card.Text>
+                <Card.Text className="card3text">
                     <b>{boldtext}</b> {text}
                 </Card.Text>
             </Card.Body>

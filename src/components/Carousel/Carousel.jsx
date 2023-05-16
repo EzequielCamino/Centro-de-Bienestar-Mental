@@ -1,10 +1,11 @@
-import Carousel from 'react-bootstrap/Carousel';
-import Card3 from '../Card 3/Card 3';
 import './Carousel.scss'
+
+import Card3 from '../Card 3/Card 3';
+import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselMobile() {
   return (
-    <Carousel variant='dark'>
+    <Carousel className='carrusel' variant='dark'>
       <Carousel.Item>
         <Card3 specialist="Aillon.jpg" title="Dra. Marcela Aillon" boldtext="Médico psiquiatra"/>
       </Carousel.Item>

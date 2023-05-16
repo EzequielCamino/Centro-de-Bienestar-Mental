@@ -39,11 +39,15 @@
         justify-content: center;
 
         h3 {
+            font-family: 'Roboto';
+        font-weight: 600;
             font-size: calc(6.66px + 0.695vw);
             color: rgba(2, 94, 110, 1);
         }
 
-        p {
+        p { 
+            font-family: 'Open sans';
+            font-weight: 400;
             font-size: calc(5.33px + 0.555vw);
             color: rgba(47, 38, 22, 1);
         }
