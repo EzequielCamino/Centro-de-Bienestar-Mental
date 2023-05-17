@@ -1,6 +1,9 @@
-import React from "react";
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import './Navbar.scss';
+
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+
+import { NavLink } from "react-router-dom";
+import React from "react";
 
 function MyAppNavbar() {
   return (
@@ -10,9 +13,15 @@ function MyAppNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="navbarLinks">
-            <Nav.Link href="/" className="navbarLinksRefs">Inicio</Nav.Link>
-            <Nav.Link href="/servicios" className="navbarLinksRefs">Servicios</Nav.Link>
-            <Nav.Link href="/contacto" className="navbarLinksRefs">Contacto</Nav.Link>
+            <Nav.Link>
+            <NavLink className="navbarLinksRefs" to="/">Inicio</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+            <NavLink className="navbarLinksRefs" to="/servicios">Servicios</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+            <NavLink className="navbarLinksRefs" to="/contacto">Contacto</NavLink>
+            </Nav.Link>
             <Button href="/citas" className="navbarLinksButton" variant="info">Agendar cita</Button>
           </Nav>
         </Navbar.Collapse>
