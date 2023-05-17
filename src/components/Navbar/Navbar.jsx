@@ -22,7 +22,11 @@ function MyAppNavbar() {
             <Nav.Link>
             <NavLink className="navbarLinksRefs" to="/contacto">Contacto</NavLink>
             </Nav.Link>
-            <Button href="/citas" className="navbarLinksButton" variant="info">Agendar cita</Button>
+            <Button href="/citas" className="navbarLinksButton" variant="info">
+              <NavLink className="navbarLinkButton" to="/citas">
+                Agendar cita
+                </NavLink> 
+              </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
