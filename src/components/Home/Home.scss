@@ -37,9 +37,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
-      width: 283px;
-      height: 56px;
+      font-size: calc(13.32px + 0.348vw);
+      width: calc(188.66px + 4.9133vw);
+      height: calc(37.33px + 0.9733vw);
     }
   }
   .none {
@@ -175,9 +175,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
-      width: 283px;
-      height: 56px;
+      font-size: calc(13.32px + 0.348vw);
+      width: calc(188.66px + 4.9133vw);
+      height: calc(37.33px + 0.9733vw);
     }
   }
 }
@@ -280,7 +280,6 @@
   }
   .schedule {
     height: 739px;
-
     background-image: url("../../../public/hero-img2.png");
     background-size: cover;
     display: flex;

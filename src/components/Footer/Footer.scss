@@ -16,6 +16,9 @@
             &:hover{
                 font-weight: bold;
             }
+            &:active:before{
+                color: #766037
+            }
         }
     }
     .socialnetworks{

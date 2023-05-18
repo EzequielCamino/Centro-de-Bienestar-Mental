@@ -48,7 +48,7 @@ function Citas() {
   return (
     <>
       <section className="formContainer">
-        <img className="imgBack" src="sala.png" alt="" />
+        <img className="imgBack" src="sala2.png" alt="" />
         <div className="textContainer">
           <h1>¡Gracias por confiar en nosotros!</h1>
           <p>
@@ -58,14 +58,14 @@ function Citas() {
             posible para la confirmar de la cita.
           </p>
         </div>
-        <form action="https://formsubmit.co/santiserrato0910@gmail.com" method="POST">
-        <Formulario className="form"  onSubmit={onSubmit}>
+{/*         <form action="https://formsubmit.co/ezeeqii@gmail.com" method="POST">
+ */}        <Formulario className="form" action="https://formsubmit.co/ezeeqii@gmail.com" method="POST"/* onSubmit={onSubmit} */>
           <Input
             estado={nombre}
             cambiarEstado={cambiarNombre}
             tipo="text"
             label="Nombre Completo"
-            name="usuario"
+            name="Nombre Completo"
             leyendaError="El nombre solo puede contener letras y espacios."
             expresionRegular={expresiones.nombre}
           />
@@ -74,7 +74,7 @@ function Citas() {
             cambiarEstado={cambiarCorreo}
             tipo="email"
             label="Correo Electrónico"
-            name="correo"
+            name="E-mail"
             leyendaError="El correo solo puede contener letras, numeros, puntos, guiones y guion bajo."
             expresionRegular={expresiones.correo}
           />
@@ -83,58 +83,53 @@ function Citas() {
             cambiarEstado={cambiarTelefono}
             tipo="text"
             label="Teléfono"
-            name="telefono"
+            name="Teléfono"
             leyendaError="El telefono solo puede contener numeros y el maximo son 14 dígitos."
             expresionRegular={expresiones.telefono}
           />
           <label>
             Seleccione el tipo de sesión
-            <select className="selectOption">
-              <option value="1">Presencial</option>
-              <option value="2">Virtual</option>
+            <select className="selectOption" name="Modalidad">
+              <option value="Presencial">Presencial</option>
+              <option value="Virtual">Virtual</option>
             </select>
           </label>
           <label>
             Selecciona entre nuestros especialistas
             <div className="specialistContainer">
-                <PersonCard  name={"Marcela Aillón"} img={"Aillon.jpg"} specialty={"Psiquiatra"} value={1}/>
-                <PersonCard  name={"Daniela Soliz"} img={"Soliz.jpg"} specialty={"Psicóloga"} value={2}/>
-                <PersonCard  name={"Gabriela Paz"} img={"Paz.jpg"} specialty={"Psicóloga"} value={3}/>
+                <PersonCard  name={"Marcela Aillón"} img={"Aillon.jpg"} specialty={"Psiquiatra"} value={"Marcela Aillón"}/>
+                <PersonCard  name={"Daniela Soliz"} img={"Soliz.jpg"} specialty={"Psicóloga"} value={"Daniela Soliz"}/>
+                <PersonCard  name={"Gabriela Paz"} img={"Paz.jpg"} specialty={"Psicóloga"} value={"Gabriela Paz"}/>
             </div>
           </label>
           <div>
                 <div className="row">
                     <div className="">
-                        <Form.Group controlId="dob">
+                        <Form.Group controlId="week">
                             <Form.Label>Elige en que semana quieres asistir</Form.Label>
-                            <Form.Control type="date" name="dob"  />
+                            <Form.Control type="week" name="Semana" min={new Date().toISOString().split('T')[0]} />
                         </Form.Group>
                     </div>
                 </div>
             </div>
-          <input
-            type="hidden"
-            name="text"
-            value="http://localhost:3000/citas"
-          />
-          <input type="hidden" name="_captcha" value="false" />
-
-          {formularioValido === false && (
+          {/* {formularioValido === false && (
             <MensajeError>
               <p>
                 <FontAwesomeIcon icon={faExclamationTriangle} />
                 <b>Error:</b> Por favor rellena el formulario correctamente.
               </p>
             </MensajeError>
-          )}
+          )} */}
+          <input type="hidden" name="_next" value="http://localhost:3000/citas"/>
+          <input type="hidden" name="_captcha" value="false"/>
           <ContenedorBotonCentrado>
           <Button className="submitButton" type="submit" variant="info">Agendar</Button>
-            {formularioValido === true && (
+            {/* {formularioValido === true && (
               <MensajeExito>Formulario enviado exitosamente!</MensajeExito>
-            )}
+            )} */}
           </ContenedorBotonCentrado>
+          
         </Formulario>
-        </form>
       </section>
     </>
   );

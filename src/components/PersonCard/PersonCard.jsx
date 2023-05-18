@@ -12,7 +12,7 @@ const PersonCard = ({img, specialty, name, value}) => {
         <Card.Title className='textPerson'>{name}</Card.Title>
         <Card.Subtitle id='specialty' className="mb-2 text-muted">{specialty}</Card.Subtitle>
       </div>
-        <input className='inputRadio' type="radio" value={value} name='values'/> 
+        <input className='inputRadio' type="radio" value={value} name='Especialista'/> 
       </Card.Body>
     </Card>
   )

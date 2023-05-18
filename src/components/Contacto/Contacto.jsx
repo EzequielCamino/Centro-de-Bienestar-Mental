@@ -6,7 +6,7 @@ import React from 'react'
 const Contacto = () => {
   return (
     <>
-      <div className="heroVector" alt="" />
+      <div className="heroVectorContacto" alt="" />
       <section className="heroContacto">
         <h2 className='heroContactoTitle'>Contáctanos</h2>
         <div className='heroContactoCards'>
@@ -36,9 +36,9 @@ const Contacto = () => {
             <h3>Síguenos en</h3>
             <p>Todas nuestras redes sociales</p>
             <div className="socialnetworks">
-              <Button href="https://www.instagram.com" target="_blank" className="socialnetworksBtn" variant="info"><img src="instagram.svg" alt="Instagram" /></Button>
-              <Button href="https://www.linkedin.com" target="_blank" className="socialnetworksBtn" variant="info"><img src="linkedin.svg" alt="Linkedin" /></Button>
-              <Button href="https://www.facebook.com" target="_blank" className="socialnetworksBtn" variant="info"><img src="facebook.svg" alt="Facebook" /></Button>
+              <Button href="https://www.instagram.com/dra.marcela.aillon/" target="_blank" className="socialnetworksBtn" variant="info"><img src="instagram.svg" alt="Instagram" /></Button>
+              <Button href="https://www.linkedin.com/in/dramarcelaaill%C3%B3n/" target="_blank" className="socialnetworksBtn" variant="info"><img src="linkedin.svg" alt="Linkedin" /></Button>
+              <Button href="https://www.facebook.com/DraMarcelaAillon" target="_blank" className="socialnetworksBtn" variant="info"><img src="facebook.svg" alt="Facebook" /></Button>
             </div>
           </div>
         </div>
@@ -48,18 +48,18 @@ const Contacto = () => {
         <p>Rellenando el siguiente formulario, podrás dejarnos tus consultas, dudas o sugerencias</p>
         <div className='contactoConsulta'>
           <iframe title='Centro de Rehabilitación Maps' src="https://www.google.com/maps/embed/v1/place?q=Dra+Marcela+Aillón+-+Centro+de+bienestar+mental,+Calle+15,+La+Paz,+Bolivia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-          <form className='contactoConsultaForm' action="https://formsubmit.co/ffc7ed9b167ec049ba136e477abb484f" method='POST'>
+          <form className='contactoConsultaForm' action="https://formsubmit.co/ezeeqii@gmail.com" method='POST'>
                 <label> Nombre completo
-                    <input required={true} type="text" name='Name'/>
+                    <input required={true} type="text" name='Nombre Completo'/>
                 </label>
                 <label> Teléfono
-                    <input required={true} type="tel" name='Telephone'/>
+                    <input required={true} type="tel" name='Teléfono'/>
                 </label>
                 <label> Correo electrónico
                     <input required={true} type="email" name='E-mail'/>
                 </label>
                 <label> Mensaje
-                    <textarea required={true} rows="4" name='Message'></textarea>
+                    <textarea required={true} rows="4" name='Mensaje'></textarea>
                 </label>
                 <input type="hidden" name="_next" value="http://localhost:3000/contacto"/>
                 <input type="hidden" name="_captcha" value="false"/>

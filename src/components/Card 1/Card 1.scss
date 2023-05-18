@@ -9,7 +9,7 @@
     padding: 2vw;
     filter: drop-shadow(3px 4px 20px rgba(118, 96, 55, 0.1));
     h3{
-        margin-top: 15px;
+        margin-top: calc(5px + 0.52vw);
         font-family: 'Roboto';
         font-weight: 600;
         font-size: calc(6.66px + 0.695vw);
@@ -19,7 +19,7 @@
         width: 3vw;
     }
     p{
-        margin-top: 15px;
+        margin-top: calc(5px + 0.52vw);
         font-family: 'Open sans';
         font-weight: 400;
         font-size: calc(5.33px + 0.555vw);
