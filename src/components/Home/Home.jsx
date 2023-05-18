@@ -10,7 +10,7 @@ import React from "react";
 function Home() {
     return (
         <>
-            <div className="heroVector" alt="" />
+            <div className="heroVectorHome" alt="" />
             <section className="hero">
                 <div className="heroText">
                     <h1>Tu mente merece atención: comienza a cuidar tu salud mental</h1>
