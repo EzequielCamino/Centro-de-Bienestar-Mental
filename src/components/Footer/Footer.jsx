@@ -14,7 +14,7 @@ function MyAppFooter() {
         </div>
         <Link to="/"><img className="footerLogo" src="logo.svg" alt="Dra. Marcela Aillón"/></Link>
         <p className="footerLinks"> <Nav.Link><Link to="/servicios">Servicios</Link></Nav.Link> | <Nav.Link><Link to="/contacto">Contacto</Link></Nav.Link> | <Nav.Link><Link to="/citas">Citas</Link></Nav.Link></p>
-        <h6 className="footerCopyright">© 2023 - Dra. Marcela Aillón, centro de bienestar mental</h6>
+        <h6 className="footerCopyright">© 2023 - Dra. Marcela Aillón, Centro de Bienestar Mental</h6>
     </section>
   );
 }
