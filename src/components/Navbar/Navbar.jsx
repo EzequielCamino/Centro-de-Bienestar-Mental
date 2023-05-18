@@ -9,7 +9,7 @@ function MyAppNavbar() {
   return (
     <Navbar id="Navbar" bg="light" expand="md">
       <Container>
-        <Navbar.Brand href="/" className="navbarBrand"><img src="logo.svg" alt="Dra. Marcela Aillón"/></Navbar.Brand>
+        <Navbar.Brand className="navbarBrand"><NavLink to ="/"><img src="logo.svg" alt="Dra. Marcela Aillón"/></NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="navbarLinks">
