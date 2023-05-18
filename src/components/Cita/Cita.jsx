@@ -59,7 +59,7 @@ function Citas() {
           </p>
         </div>
 {/*         <form action="https://formsubmit.co/ezeeqii@gmail.com" method="POST">
- */}        <Formulario className="form" action="https://formsubmit.co/ezeeqii@gmail.com" method="POST"/* onSubmit={onSubmit} */>
+ */}        <Formulario className="form" action="https://formsubmit.co/centrodebienestarmental@outlook.com" method="POST"/* onSubmit={onSubmit} */>
           <Input
             estado={nombre}
             cambiarEstado={cambiarNombre}

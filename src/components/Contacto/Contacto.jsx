@@ -48,7 +48,7 @@ const Contacto = () => {
         <p>Rellenando el siguiente formulario, podrás dejarnos tus consultas, dudas o sugerencias</p>
         <div className='contactoConsulta'>
           <iframe title='Centro de Rehabilitación Maps' src="https://www.google.com/maps/embed/v1/place?q=Dra+Marcela+Aillón+-+Centro+de+bienestar+mental,+Calle+15,+La+Paz,+Bolivia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-          <form className='contactoConsultaForm' action="https://formsubmit.co/ezeeqii@gmail.com" method='POST'>
+          <form className='contactoConsultaForm' action="https://formsubmit.co/centrodebienestarmental@outlook.com" method='POST'>
                 <label> Nombre completo
                     <input required={true} type="text" name='Nombre Completo'/>
                 </label>
